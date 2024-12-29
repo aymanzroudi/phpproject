@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements Sportifs - SportEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SportEvents</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html" class="active">Événements</a></li>
+                <li><a href="calendrier.html">Calendrier</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="events-page">
+        <div class="events-header">
+            <h1>Tous les Événements Sportifs</h1>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Rechercher un événement...">
+            </div>
+            <div class="filters-container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="*">Tous</button>
+                    <button class="filter-btn" data-filter=".football">Football</button>
+                    <button class="filter-btn" data-filter=".basketball">Basketball</button>
+                    <button class="filter-btn" data-filter=".tennis">Tennis</button>
+                    <button class="filter-btn" data-filter=".athletisme">Athlétisme</button>
+                    <button class="filter-btn" data-filter=".natation">Natation</button>
+                </div>
+                <div class="price-filter">
+                    <label>Prix maximum:</label>
+                    <div id="priceRange" class="price-slider"></div>
+                    <span id="priceValue">25€</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="events-grid">
+            <div class="event-card" data-category="football">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800" alt="Tournoi de Football">
+                </div>
+                <div class="event-info">
+                    <span class="event-category">Football</span>
+                    <h3>Tournoi de Football Inter-régional</h3>
+                    <p class="event-description">Compétition entre les meilleures équipes régionales. Prix et trophées à gagner.</p>
+                    <p class="event-date"><i class="fas fa-calendar"></i> 15 Janvier 2025</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Stade Municipal</p>
+                    <p class="event-price" data-price="20"><i class="fas fa-ticket-alt"></i> 20€</p>
+                    <button class="btn-primary">S'inscrire</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="basketball">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800" alt="Basketball">
+                </div>
+                <div class="event-info">
+                    <span class="event-category">Basketball</span>
+                    <h3>Championnat National de Basketball</h3>
+                    <p class="event-description">Tournoi national avec les meilleures équipes de basketball du pays.</p>
+                    <p class="event-date"><i class="fas fa-calendar"></i> 20 Janvier 2025</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Palais des Sports</p>
+                    <p class="event-price" data-price="25"><i class="fas fa-ticket-alt"></i> 25€</p>
+                    <button class="btn-primary">S'inscrire</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="tennis">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1544298621-35a764866ff0?w=800" alt="Tennis">
+                </div>
+                <div class="event-info">
+                    <span class="event-category">Tennis</span>
+                    <h3>Open de Tennis</h3>
+                    <p class="event-description">Tournoi open de tennis pour tous les niveaux avec plusieurs catégories.</p>
+                    <p class="event-date"><i class="fas fa-calendar"></i> 25 Janvier 2025</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Club de Tennis</p>
+                    <p class="event-price" data-price="30"><i class="fas fa-ticket-alt"></i> 30€</p>
+                    <button class="btn-primary">S'inscrire</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="athletisme">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800" alt="Athlétisme">
+                </div>
+                <div class="event-info">
+                    <span class="event-category">Athlétisme</span>
+                    <h3>Marathon de la Ville</h3>
+                    <p class="event-description">Course annuelle à travers la ville avec plusieurs distances disponibles.</p>
+                    <p class="event-date"><i class="fas fa-calendar"></i> 1 Février 2025</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Centre-ville</p>
+                    <p class="event-price" data-price="15"><i class="fas fa-ticket-alt"></i> 15€</p>
+                    <button class="btn-primary">S'inscrire</button>
+                </div>
+            </div>
+
+            <div class="event-card" data-category="natation">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800" alt="Natation">
+                </div>
+                <div class="event-info">
+                    <span class="event-category">Natation</span>
+                    <h3>Compétition de Natation</h3>
+                    <p class="event-description">Compétition régionale de natation toutes catégories.</p>
+                    <p class="event-date"><i class="fas fa-calendar"></i> 10 Février 2025</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Piscine Olympique</p>
+                    <p class="event-price" data-price="12"><i class="fas fa-ticket-alt"></i> 12€</p>
+                    <button class="btn-primary">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="no-results">
+            <p>Aucun événement ne correspond à vos critères de recherche.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>SportEvents est votre plateforme de gestion d'événements sportifs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@sportevents.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SportEvents. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

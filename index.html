@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Événements Sportifs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SportEvents</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="calendrier.html">Calendrier</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1920" alt="Stade de Football">
+                        <div class="slide-content">
+                            <h1>Bienvenue sur SportEvents</h1>
+                            <p>Découvrez les meilleurs événements sportifs</p>
+                            <a href="evenements.html" class="btn-primary">Voir les événements</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=1920" alt="Terrain de Basketball">
+                        <div class="slide-content">
+                            <h1>Championnats de Basketball</h1>
+                            <p>Participez aux tournois locaux et nationaux</p>
+                            <a href="evenements.html" class="btn-primary">S'inscrire maintenant</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=1920" alt="Course à pied">
+                        <div class="slide-content">
+                            <h1>Marathon de la Ville</h1>
+                            <p>Préparez-vous pour le plus grand événement de l'année</p>
+                            <a href="evenements.html" class="btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=1920" alt="Piscine Olympique">
+                        <div class="slide-content">
+                            <h1>Compétition de Natation</h1>
+                            <p>Plongez dans l'action à la piscine olympique</p>
+                            <a href="evenements.html" class="btn-primary">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2>Événements à venir</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=800" alt="Tournoi de Football">
+                    </div>
+                    <div class="event-info">
+                        <span class="event-category">Football</span>
+                        <h3>Tournoi de Football</h3>
+                        <p class="event-date"><i class="fas fa-calendar"></i> 15 Janvier 2025</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Stade Municipal</p>
+                        <a href="evenements.html" class="btn-primary">Voir plus</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800" alt="Basketball">
+                    </div>
+                    <div class="event-info">
+                        <span class="event-category">Basketball</span>
+                        <h3>Championnat National</h3>
+                        <p class="event-date"><i class="fas fa-calendar"></i> 20 Janvier 2025</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Palais des Sports</p>
+                        <a href="evenements.html" class="btn-primary">Voir plus</a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800" alt="Athlétisme">
+                    </div>
+                    <div class="event-info">
+                        <span class="event-category">Athlétisme</span>
+                        <h3>Marathon de la ville</h3>
+                        <p class="event-date"><i class="fas fa-calendar"></i> 1 Février 2025</p>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Centre-ville</p>
+                        <a href="evenements.html" class="btn-primary">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-events">
+                <a href="evenements.html" class="btn-secondary">Voir tous les événements</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>SportEvents est votre plateforme de gestion d'événements sportifs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@sportevents.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SportEvents. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

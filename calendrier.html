@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier des Événements - SportEvents</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SportEvents</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenements.html">Événements</a></li>
+                <li><a href="calendrier.html" class="active">Calendrier</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="calendar-page">
+        <div class="calendar-header">
+            <h1>Calendrier des Événements</h1>
+            <div class="calendar-controls">
+                <button id="prevMonth" class="btn-calendar"><i class="fas fa-chevron-left"></i></button>
+                <h2 id="currentMonth">Janvier 2025</h2>
+                <button id="nextMonth" class="btn-calendar"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="calendar-container">
+            <div class="calendar-legend">
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #3498db;"></span>
+                    <span>Football</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #e74c3c;"></span>
+                    <span>Basketball</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #2ecc71;"></span>
+                    <span>Tennis</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #f1c40f;"></span>
+                    <span>Athlétisme</span>
+                </div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: #9b59b6;"></span>
+                    <span>Natation</span>
+                </div>
+            </div>
+
+            <div class="calendar">
+                <div class="calendar-weekdays">
+                    <div>Lun</div>
+                    <div>Mar</div>
+                    <div>Mer</div>
+                    <div>Jeu</div>
+                    <div>Ven</div>
+                    <div>Sam</div>
+                    <div>Dim</div>
+                </div>
+                <div class="calendar-days" id="calendarDays">
+                    <!-- Les jours seront générés par JavaScript -->
+                </div>
+            </div>
+
+            <div class="event-details" id="eventDetails">
+                <h3>Événements du jour</h3>
+                <div class="selected-date" id="selectedDate"></div>
+                <div class="day-events" id="dayEvents">
+                    <!-- Les événements seront affichés ici -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>SportEvents est votre plateforme de gestion d'événements sportifs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: contact@sportevents.com</p>
+                <p>Téléphone: +33 1 23 45 67 89</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SportEvents. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/calendar.js"></script>
+</body>
+</html>
